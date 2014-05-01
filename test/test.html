@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>QUnit: ajax</title>
+<link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.14.0.css">
+</head>
+<body>
+
+<div id="container"></div>
+
+<script type="text/template" id="friends">
+  <table>
+    <% _.each(friends, function (row, index) { %>
+      <tr>
+        <td><%- row.name %></td>
+        <td><%- row.country %></td>
+        <td><%- row.food %></td>
+      </tr>
+    <% }); %>
+  </table>
+</script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+<script src="../../ajax/src/ajax.js"></script>
+<script src="../src/view.js"></script>
+
+<script src="test.js"></script>
+
+</body>
+</html>
