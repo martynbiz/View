@@ -1,4 +1,4 @@
-# Gofer
+# View
 
 A light weight library (under 2kb uncompressed) for making AJAX calls and storing the data locally for rendering.
 
